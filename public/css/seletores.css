@@ -23,4 +23,68 @@
     background-color: yellow;
 }
 
+#unico{
+    color: red;
+}
+
+li[data-type="attr"] {
+  text-decoration: underline;
+}
+
+li[data-role="admin user"]{
+    font-style: italic;
+}
+
+li.item:nth-child(5) {
+  font-size: 20px; 
+}
+
+li.item:nth-child(6) {
+  border: 1px solid blue; 
+}
+
+li.item.ativo {
+  background-color: #ccc; /* cinza */
+}
+
+li[lang="pt-br"]{
+    color: #00FF00;
+}
+
+li[title="começa-com"]{
+    font-style: italic;
+}
+
+ul > li.item:nth-child(7){
+  background-color: gray;
+}
+
+ul > li.item:nth-child(8) span {
+  font-weight: bold;
+}
+
+li.especial.destaque{
+  text-transform: uppercase;
+}
+
+ul > li.item:nth-child(12){
+    background-color: pink;
+}
+
 /** Continue aqui **/
+
+@media (max-width: 768px) {
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+        height: auto;
+    }
+
+    aside > img{
+        margin: auto;
+        display: flex;
+    }
+}
